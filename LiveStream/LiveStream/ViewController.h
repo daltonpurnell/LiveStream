@@ -10,12 +10,33 @@
 #import <OpenEars/OEEventsObserver.h>
 #import <Slt/Slt.h>
 #import <OpenEars/OEFliteController.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <CoreMedia/CoreMedia.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface ViewController : UIViewController <UITextFieldDelegate>
+#define CAPTURE_FRAMES_PER_SECOND		20
+
+@interface ViewController : UIViewController <UITextFieldDelegate, OEEventsObserverDelegate, AVCaptureFileOutputRecordingDelegate>
+
+{
+    BOOL WeAreRecording;
+    
+    AVCaptureSession *CaptureSession;
+    AVCaptureMovieFileOutput *MovieFileOutput;
+    AVCaptureDeviceInput *VideoInputDevice;
+}
 
 @property (weak, nonatomic) IBOutlet UITextField *alertWordTextField;
-
+@property (strong, nonatomic) OEEventsObserver *openEarsEventsObserver;
 @property (strong, nonatomic) OEFliteController *fliteController;
+@property (weak, nonatomic) IBOutlet UIButton *okButton;
+@property (weak, nonatomic) IBOutlet UILabel *recordingLabel;
+
+@property (retain) AVCaptureVideoPreviewLayer *PreviewLayer;
+
+- (void) CameraSetOutputProperties;
+- (AVCaptureDevice *) CameraWithPosition:(AVCaptureDevicePosition) Position;
 
 // this is a flite voice
 @property (strong, nonatomic) Slt *slt;

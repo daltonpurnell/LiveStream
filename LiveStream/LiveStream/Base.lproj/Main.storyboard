@@ -29,11 +29,20 @@
                                     <action selector="okButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAF-l6-cCe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording . . ." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNO-aK-c5L">
+                                <rect key="frame" x="20" y="289" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="meD-Xe-jy3" secondAttribute="leading" id="Al1-gq-XgZ"/>
                             <constraint firstItem="TOZ-Cw-jlP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="BWC-j4-2rU"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="rNO-aK-c5L" secondAttribute="leading" id="FOT-rS-8vS"/>
+                            <constraint firstItem="rNO-aK-c5L" firstAttribute="top" secondItem="meD-Xe-jy3" secondAttribute="bottom" constant="80" id="Mn0-Tz-VrT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rNO-aK-c5L" secondAttribute="trailing" id="R2x-ja-hM4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="meD-Xe-jy3" secondAttribute="trailing" id="RZU-d8-rX0"/>
                             <constraint firstItem="meD-Xe-jy3" firstAttribute="top" secondItem="TOZ-Cw-jlP" secondAttribute="bottom" constant="33" id="X3e-kE-dW4"/>
                             <constraint firstItem="TOZ-Cw-jlP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nDI-3r-jJw"/>
@@ -43,6 +52,8 @@
                     <navigationItem key="navigationItem" id="fZc-Ga-20s"/>
                     <connections>
                         <outlet property="alertWordTextField" destination="TOZ-Cw-jlP" id="fNM-vf-ag5"/>
+                        <outlet property="okButton" destination="meD-Xe-jy3" id="w0O-xw-LxF"/>
+                        <outlet property="recordingLabel" destination="rNO-aK-c5L" id="eKY-ir-7By"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

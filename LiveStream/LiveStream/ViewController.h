@@ -17,7 +17,7 @@
 
 #define CAPTURE_FRAMES_PER_SECOND		20
 
-@interface ViewController : UIViewController <UITextFieldDelegate, OEEventsObserverDelegate, AVCaptureFileOutputRecordingDelegate>
+@interface ViewController : UIViewController <OEEventsObserverDelegate, AVCaptureFileOutputRecordingDelegate>
 
 {
     BOOL WeAreRecording;
@@ -27,10 +27,8 @@
     AVCaptureDeviceInput *VideoInputDevice;
 }
 
-@property (weak, nonatomic) IBOutlet UITextField *alertWordTextField;
 @property (strong, nonatomic) OEEventsObserver *openEarsEventsObserver;
 @property (strong, nonatomic) OEFliteController *fliteController;
-@property (weak, nonatomic) IBOutlet UIButton *okButton;
 @property (weak, nonatomic) IBOutlet UILabel *recordingLabel;
 
 @property (retain) AVCaptureVideoPreviewLayer *PreviewLayer;

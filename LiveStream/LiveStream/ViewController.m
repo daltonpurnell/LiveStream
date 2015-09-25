@@ -25,11 +25,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.alertWordTextField.delegate = self;
     
     self.recordingLabel.hidden = YES;
     
     // set up openears language model
+    OELanguageModelGenerator *lmGenerator = [[OELanguageModelGenerator alloc] init];
+    
+    self.alertWord = @"Help";
+    
+    NSArray *words = [NSArray arrayWithObjects:self.alertWord, nil];
+    NSString *name = @"NameIWantForMyLanguageModelFiles";
+    NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name forAcousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"]]; // Change "AcousticModelEnglish" to "AcousticModelSpanish" to create a Spanish language model instead of an English one.
+    
+    NSString *lmPath = [NSString stringWithFormat:@"%@/NameIWantForMyLanguageModelFiles.%@",[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0],@"DMP"];
+    
+    NSString *dicPath = [NSString stringWithFormat:@"%@/NameIWantForMyLanguageModelFiles.%@",[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0],@"DMP"];
+    
+    if(err == nil) {
+        
+        lmPath = [lmGenerator pathToSuccessfullyGeneratedLanguageModelWithRequestedName:@"NameIWantForMyLanguageModelFiles"];
+        dicPath = [lmGenerator pathToSuccessfullyGeneratedDictionaryWithRequestedName:@"NameIWantForMyLanguageModelFiles"];
+        
+    } else {
+        NSLog(@"Error: %@",[err localizedDescription]);
+    }
+    
+    //  initiate the event observer
+    
+    self.openEarsEventsObserver = [[OEEventsObserver alloc] init];
+    [self.openEarsEventsObserver setDelegate:self];
+    
+    
+    [[OEPocketsphinxController sharedInstance] setActive:TRUE error:nil];
+    [[OEPocketsphinxController sharedInstance] startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO]; // Change "AcousticModelEnglish" to "AcousticModelSpanish" to perform Spanish recognition instead of English.
     
     
     //---------------------------------
@@ -81,7 +109,8 @@
     NSLog(@"Adding video preview layer");
     [self setPreviewLayer:[[AVCaptureVideoPreviewLayer alloc] initWithSession:CaptureSession]];
     
-    PreviewLayer.orientation = AVCaptureVideoOrientationLandscapeRight;		//<<SET ORIENTATION.  You can deliberatly set this wrong to flip the image and may actually need to set it wrong to get the right image
+    PreviewLayer.orientation = AVCaptureVideoOrientationPortrait;
+    //<<SET ORIENTATION.  You can deliberatly set this wrong to flip the image and may actually need to set it wrong to get the right image
     
     [[self PreviewLayer] setVideoGravity:AVLayerVideoGravityResizeAspectFill];
     
@@ -207,55 +236,6 @@
 
 
 
-
--(BOOL)textFieldShouldReturn:(UITextField *)textField {
-    
-    OELanguageModelGenerator *lmGenerator = [[OELanguageModelGenerator alloc] init];
-    
-    self.alertWord = [NSString stringWithFormat:@"%@", self.alertWordTextField.text];
-    
-    NSArray *words = [NSArray arrayWithObjects:self.alertWord, nil];
-    NSString *name = @"NameIWantForMyLanguageModelFiles";
-    NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name forAcousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"]]; // Change "AcousticModelEnglish" to "AcousticModelSpanish" to create a Spanish language model instead of an English one.
-    
-    NSString *lmPath = [NSString stringWithFormat:@"%@/NameIWantForMyLanguageModelFiles.%@",[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0],@"DMP"];
-    
-    NSString *dicPath = [NSString stringWithFormat:@"%@/NameIWantForMyLanguageModelFiles.%@",[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0],@"DMP"];
-    
-    if(err == nil) {
-        
-        lmPath = [lmGenerator pathToSuccessfullyGeneratedLanguageModelWithRequestedName:@"NameIWantForMyLanguageModelFiles"];
-        dicPath = [lmGenerator pathToSuccessfullyGeneratedDictionaryWithRequestedName:@"NameIWantForMyLanguageModelFiles"];
-        
-    } else {
-        NSLog(@"Error: %@",[err localizedDescription]);
-    }
-    
-    //  initiate the event observer
-    
-    self.openEarsEventsObserver = [[OEEventsObserver alloc] init];
-    [self.openEarsEventsObserver setDelegate:self];
-    
-    
-    [[OEPocketsphinxController sharedInstance] setActive:TRUE error:nil];
-    [[OEPocketsphinxController sharedInstance] startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO]; // Change "AcousticModelEnglish" to "AcousticModelSpanish" to perform Spanish recognition instead of English.
-    
-
-    
-    [textField resignFirstResponder];
-    return YES;
-}
-
-- (IBAction)okButtonTapped:(id)sender {
-    
-    self.alertWord = [NSString stringWithFormat:@"Your alert word is %@", self.alertWordTextField.text];
-    
-    self.fliteController = [[OEFliteController alloc] init];
-    self.slt = [[Slt alloc] init];
-    [self.fliteController say:self.alertWord withVoice:self.slt];
-    
-}
-
 #pragma mark - oeeventsobserver delegate methods
 
 - (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
@@ -285,10 +265,6 @@
         AVCaptureDeviceInput *NewVideoInput;
         AVCaptureDevicePosition position = [[VideoInputDevice device] position];
         if (position == AVCaptureDevicePositionBack)
-        {
-            NewVideoInput = [[AVCaptureDeviceInput alloc] initWithDevice:[self CameraWithPosition:AVCaptureDevicePositionBack] error:&error];
-        }
-        else if (position == AVCaptureDevicePositionBack)
         {
             NewVideoInput = [[AVCaptureDeviceInput alloc] initWithDevice:[self CameraWithPosition:AVCaptureDevicePositionBack] error:&error];
         }

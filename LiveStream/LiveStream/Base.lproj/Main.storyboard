@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Emergency Cam-->
+        <!--Panic Cam-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -31,7 +31,9 @@
                             <constraint firstItem="rNO-aK-c5L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="225" id="YqX-SS-bdu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Emergency Cam" id="fZc-Ga-20s"/>
+                    <navigationItem key="navigationItem" title="Panic Cam" id="fZc-Ga-20s">
+                        <barButtonItem key="leftBarButtonItem" image="Settings-100" id="37g-zg-PFP"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="recordingLabel" destination="rNO-aK-c5L" id="eKY-ir-7By"/>
                     </connections>
@@ -59,4 +61,7 @@
             <point key="canvasLocation" x="427" y="-339"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Settings-100" width="26" height="26"/>
+    </resources>
 </document>

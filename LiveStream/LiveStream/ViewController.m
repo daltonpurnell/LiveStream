@@ -28,7 +28,10 @@
     
     [Appearance initializeAppearanceDefaults];
     
+    [self.navigationController.navigationBar setTranslucent:NO];
+    
     self.recordingLabel.hidden = YES;
+    
     
     // set up openears language model
     OELanguageModelGenerator *lmGenerator = [[OELanguageModelGenerator alloc] init];
@@ -353,17 +356,26 @@ didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL
         if (value)
         {
             RecordedSuccessfully = [value boolValue];
-            self.recordingLabel.hidden = YES;
         }
     }
     if (RecordedSuccessfully)
     {
-	
-     // nothing
-        
+        //----- RECORDED SUCESSFULLY -----
+        NSLog(@"didFinishRecordingToOutputFileAtURL - success");
+        ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+        if ([library videoAtPathIsCompatibleWithSavedPhotosAlbum:outputFileURL])
+        {
+            [library writeVideoAtPathToSavedPhotosAlbum:outputFileURL
+                                        completionBlock:^(NSURL *assetURL, NSError *error)
+             {
+                 if (error)
+                 {
+                     
+                 }
+             }];
+        }
     }
 }
-
 
 
 

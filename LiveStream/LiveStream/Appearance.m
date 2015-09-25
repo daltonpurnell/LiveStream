@@ -20,8 +20,6 @@
     
     [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
     
-    [[UILabel appearance] setTextColor:[UIColor colorWithRed:74/255.0 green:75/255.0 blue:76/255.0 alpha:1]];
-    
     [[UINavigationBar appearance] setTranslucent:NO];
     
     [[UITabBar appearance] setTranslucent:NO];

@@ -15,6 +15,7 @@
 #import <CoreMedia/CoreMedia.h>
 #import <AVFoundation/AVFoundation.h>
 #import "Appearance.h"
+#import <AssetsLibrary/AssetsLibrary.h>
 
 #define CAPTURE_FRAMES_PER_SECOND		20
 

@@ -286,9 +286,9 @@
         AVCaptureDevicePosition position = [[VideoInputDevice device] position];
         if (position == AVCaptureDevicePositionBack)
         {
-            NewVideoInput = [[AVCaptureDeviceInput alloc] initWithDevice:[self CameraWithPosition:AVCaptureDevicePositionFront] error:&error];
+            NewVideoInput = [[AVCaptureDeviceInput alloc] initWithDevice:[self CameraWithPosition:AVCaptureDevicePositionBack] error:&error];
         }
-        else if (position == AVCaptureDevicePositionFront)
+        else if (position == AVCaptureDevicePositionBack)
         {
             NewVideoInput = [[AVCaptureDeviceInput alloc] initWithDevice:[self CameraWithPosition:AVCaptureDevicePositionBack] error:&error];
         }

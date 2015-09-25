@@ -14,6 +14,7 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <CoreMedia/CoreMedia.h>
 #import <AVFoundation/AVFoundation.h>
+#import "Appearance.h"
 
 #define CAPTURE_FRAMES_PER_SECOND		20
 

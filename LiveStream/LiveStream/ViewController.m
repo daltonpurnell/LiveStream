@@ -26,6 +26,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    [Appearance initializeAppearanceDefaults];
+    
     self.recordingLabel.hidden = YES;
     
     // set up openears language model

@@ -1,0 +1,36 @@
+dependencies: \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Appearance.m \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Appearance.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/ViewController.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/OEEventsObserver.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/Slt.framework/Headers/Slt.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/OEFliteVoice.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/flite.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_string.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_regex.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_file.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_val.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_error.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_alloc.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_val_defs.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_val_const.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_features.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_item.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_relation.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_utterance.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_wave.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_endian.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_track.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_cart.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_phoneset.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_voice.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_audio.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_hrg.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_utt_utils.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_lexicon.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_lts.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_synth.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_tokenstream.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_units.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_sts.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/OEFliteController.h

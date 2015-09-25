@@ -33,6 +33,7 @@ dependencies: \
   /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_units.h \
   /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/cst_sts.h \
   /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/OEFliteController.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Appearance.h \
   /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/OELanguageModelGenerator.h \
   /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/OEGrammarDefinitions.h \
   /Users/djp1989/Documents/Development/PersonalProjects/LiveStream/LiveStream/LiveStream/Framework/OpenEars.framework/Headers/OEGrammarGenerator.h \

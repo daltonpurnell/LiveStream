@@ -23,6 +23,7 @@
 		CFE76A1A1BB5D60F002C3EBD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE76A191BB5D60F002C3EBD /* AVFoundation.framework */; };
 		CFE76A1C1BB5DF1E002C3EBD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE76A1B1BB5DF1E002C3EBD /* MediaPlayer.framework */; };
 		CFE76A1E1BB5E2D8002C3EBD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE76A1D1BB5E2D8002C3EBD /* CoreMedia.framework */; };
+		CFE76A231BB5FBFC002C3EBD /* Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE76A221BB5FBFC002C3EBD /* Appearance.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		CFE76A191BB5D60F002C3EBD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CFE76A1B1BB5DF1E002C3EBD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		CFE76A1D1BB5E2D8002C3EBD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CFE76A211BB5FBFC002C3EBD /* Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appearance.h; sourceTree = "<group>"; };
+		CFE76A221BB5FBFC002C3EBD /* Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appearance.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 		CFE769DA1BB5D34E002C3EBD /* LiveStream */ = {
 			isa = PBXGroup;
 			children = (
+				CFE76A211BB5FBFC002C3EBD /* Appearance.h */,
+				CFE76A221BB5FBFC002C3EBD /* Appearance.m */,
 				CFE769DE1BB5D34E002C3EBD /* AppDelegate.h */,
 				CFE769DF1BB5D34E002C3EBD /* AppDelegate.m */,
 				CFE769E11BB5D34E002C3EBD /* ViewController.h */,
@@ -313,6 +318,7 @@
 				CFE769E31BB5D34E002C3EBD /* ViewController.m in Sources */,
 				CFE769E01BB5D34E002C3EBD /* AppDelegate.m in Sources */,
 				CFE769DD1BB5D34E002C3EBD /* main.m in Sources */,
+				CFE76A231BB5FBFC002C3EBD /* Appearance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

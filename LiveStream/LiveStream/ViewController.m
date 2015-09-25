@@ -240,23 +240,9 @@
 
 - (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
     NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
-}
-
-- (void) pocketsphinxDidStartListening {
-    NSLog(@"Pocketsphinx is now listening.");
-}
-
-- (void) pocketsphinxDidDetectSpeech {
-    NSLog(@"Pocketsphinx has detected speech.");
     
-}
+    if ([hypothesis  isEqual: @"Help"]) {
 
-
-
-
-- (void) pocketsphinxDidDetectFinishedSpeech {
-    NSLog(@"Pocketsphinx has detected a period of silence, concluding an utterance.");
-    
     if ([[AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo] count] > 1)		//Only do if device has multiple cameras
     {
         NSLog(@"Toggle camera");
@@ -323,7 +309,25 @@
             
             [MovieFileOutput stopRecording];
         }
+        }
+    } else {
+        
+        NSLog(@"Hypothesis did not equal: Help");
     }
+}
+
+- (void) pocketsphinxDidStartListening {
+    NSLog(@"Pocketsphinx is now listening.");
+}
+
+- (void) pocketsphinxDidDetectSpeech {
+    NSLog(@"Pocketsphinx has detected speech.");
+    
+}
+
+
+- (void) pocketsphinxDidDetectFinishedSpeech {
+    NSLog(@"Pocketsphinx has detected a period of silence, concluding an utterance.");
     
 }
 

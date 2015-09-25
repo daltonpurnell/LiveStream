@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Z90-c0-J0S">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,11 +16,56 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please type your alert word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOZ-Cw-jlP">
+                                <rect key="frame" x="20" y="116" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meD-Xe-jy3">
+                                <rect key="frame" x="20" y="179" width="560" height="30"/>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="okButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAF-l6-cCe"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="meD-Xe-jy3" secondAttribute="leading" id="Al1-gq-XgZ"/>
+                            <constraint firstItem="TOZ-Cw-jlP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="BWC-j4-2rU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="meD-Xe-jy3" secondAttribute="trailing" id="RZU-d8-rX0"/>
+                            <constraint firstItem="meD-Xe-jy3" firstAttribute="top" secondItem="TOZ-Cw-jlP" secondAttribute="bottom" constant="33" id="X3e-kE-dW4"/>
+                            <constraint firstItem="TOZ-Cw-jlP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nDI-3r-jJw"/>
+                            <constraint firstItem="TOZ-Cw-jlP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="p4m-f9-Oqv"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fZc-Ga-20s"/>
+                    <connections>
+                        <outlet property="alertWordTextField" destination="TOZ-Cw-jlP" id="fNM-vf-ag5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1068" y="-339"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KTd-b0-tNr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z90-c0-J0S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iov-7n-AXO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2Oc-wm-nd9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kqo-7b-Md3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="427" y="-339"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,40 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'LiveStream' do
+
+pod 'AFNetworking'
+
+source 'https://github.com/CocoaPods/Specs.git'
+pod 'AWSCore'
+pod 'AWSAutoScaling'
+pod 'AWSCloudWatch'
+pod 'AWSDynamoDB'
+pod 'AWSEC2'
+pod 'AWSElasticLoadBalancing'
+pod 'AWSKinesis'
+pod 'AWSLambda'
+pod 'AWSMachineLearning'
+pod 'AWSMobileAnalytics'
+pod 'AWSS3'
+pod 'AWSSES'
+pod 'AWSSimpleDB'
+pod 'AWSSNS'
+pod 'AWSSQS'
+pod 'AWSCognito'
+
+platform :ios, '5.0'
+pod 'CocoaLumberjack'
+
+
+
+end
+
+target 'LiveStreamTests' do
+
+end
+
+target 'LiveStreamUITests' do
+
+end
+

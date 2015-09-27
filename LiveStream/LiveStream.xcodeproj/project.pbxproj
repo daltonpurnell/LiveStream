@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13539EAAA0174035093039B0 /* libPods-LiveStream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7ED9E5CA867299F9367C4E9 /* libPods-LiveStream.a */; };
 		CFE769DD1BB5D34E002C3EBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE769DC1BB5D34E002C3EBD /* main.m */; };
 		CFE769E01BB5D34E002C3EBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE769DF1BB5D34E002C3EBD /* AppDelegate.m */; };
 		CFE769E31BB5D34E002C3EBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE769E21BB5D34E002C3EBD /* ViewController.m */; };
@@ -24,6 +25,8 @@
 		CFE76A1C1BB5DF1E002C3EBD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE76A1B1BB5DF1E002C3EBD /* MediaPlayer.framework */; };
 		CFE76A1E1BB5E2D8002C3EBD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE76A1D1BB5E2D8002C3EBD /* CoreMedia.framework */; };
 		CFE76A231BB5FBFC002C3EBD /* Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE76A221BB5FBFC002C3EBD /* Appearance.m */; settings = {ASSET_TAGS = (); }; };
+		CFE774131BB8594E002C3EBD /* THBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE7740E1BB8594E002C3EBD /* THBinder.m */; settings = {ASSET_TAGS = (); }; };
+		CFE774141BB8594E002C3EBD /* THObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE774101BB8594E002C3EBD /* THObserver.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6BA17DD6AB8008A49F120E44 /* Pods-LiveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStream/Pods-LiveStream.debug.xcconfig"; sourceTree = "<group>"; };
+		B790C7170D4AB2E65FA3514B /* Pods-LiveStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStream/Pods-LiveStream.release.xcconfig"; sourceTree = "<group>"; };
+		B7ED9E5CA867299F9367C4E9 /* libPods-LiveStream.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveStream.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE769D81BB5D34E002C3EBD /* LiveStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE769DC1BB5D34E002C3EBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFE769DE1BB5D34E002C3EBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +76,12 @@
 		CFE76A1D1BB5E2D8002C3EBD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		CFE76A211BB5FBFC002C3EBD /* Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appearance.h; sourceTree = "<group>"; };
 		CFE76A221BB5FBFC002C3EBD /* Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appearance.m; sourceTree = "<group>"; };
+		CFE7740D1BB8594E002C3EBD /* THBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBinder.h; sourceTree = "<group>"; };
+		CFE7740E1BB8594E002C3EBD /* THBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBinder.m; sourceTree = "<group>"; };
+		CFE7740F1BB8594E002C3EBD /* THObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THObserver.h; sourceTree = "<group>"; };
+		CFE774101BB8594E002C3EBD /* THObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THObserver.m; sourceTree = "<group>"; };
+		CFE774111BB8594E002C3EBD /* THObserversAndBinders-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "THObserversAndBinders-Prefix.pch"; sourceTree = "<group>"; };
+		CFE774121BB8594E002C3EBD /* THObserversAndBinders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THObserversAndBinders.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,7 @@
 				CFE76A181BB5D602002C3EBD /* AudioToolbox.framework in Frameworks */,
 				CFE76A161BB5D5CE002C3EBD /* Slt.framework in Frameworks */,
 				CFE76A151BB5D5CE002C3EBD /* OpenEars.framework in Frameworks */,
+				13539EAAA0174035093039B0 /* libPods-LiveStream.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +116,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C951669123369071E0C71BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7ED9E5CA867299F9367C4E9 /* libPods-LiveStream.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50847B580FF524ADA67676E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BA17DD6AB8008A49F120E44 /* Pods-LiveStream.debug.xcconfig */,
+				B790C7170D4AB2E65FA3514B /* Pods-LiveStream.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CFE769CF1BB5D34E002C3EBD = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +140,8 @@
 				CFE769F41BB5D34F002C3EBD /* LiveStreamTests */,
 				CFE769FF1BB5D34F002C3EBD /* LiveStreamUITests */,
 				CFE769D91BB5D34E002C3EBD /* Products */,
+				50847B580FF524ADA67676E5 /* Pods */,
+				0C951669123369071E0C71BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +176,12 @@
 		CFE769DB1BB5D34E002C3EBD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFE7740D1BB8594E002C3EBD /* THBinder.h */,
+				CFE7740E1BB8594E002C3EBD /* THBinder.m */,
+				CFE7740F1BB8594E002C3EBD /* THObserver.h */,
+				CFE774101BB8594E002C3EBD /* THObserver.m */,
+				CFE774111BB8594E002C3EBD /* THObserversAndBinders-Prefix.pch */,
+				CFE774121BB8594E002C3EBD /* THObserversAndBinders.h */,
 				CFE76A0E1BB5D5CE002C3EBD /* Framework */,
 				CFE769DC1BB5D34E002C3EBD /* main.m */,
 			);
@@ -190,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFE76A051BB5D34F002C3EBD /* Build configuration list for PBXNativeTarget "LiveStream" */;
 			buildPhases = (
+				C661210EB483D1A216D8B832 /* Check Pods Manifest.lock */,
 				CFE769D41BB5D34E002C3EBD /* Sources */,
 				CFE769D51BB5D34E002C3EBD /* Frameworks */,
 				CFE769D61BB5D34E002C3EBD /* Resources */,
+				28BB770B1730747CD0C20A6A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,6 +350,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28BB770B1730747CD0C20A6A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveStream/Pods-LiveStream-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C661210EB483D1A216D8B832 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CFE769D41BB5D34E002C3EBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -319,6 +392,8 @@
 				CFE769E01BB5D34E002C3EBD /* AppDelegate.m in Sources */,
 				CFE769DD1BB5D34E002C3EBD /* main.m in Sources */,
 				CFE76A231BB5FBFC002C3EBD /* Appearance.m in Sources */,
+				CFE774131BB8594E002C3EBD /* THBinder.m in Sources */,
+				CFE774141BB8594E002C3EBD /* THObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +530,7 @@
 		};
 		CFE76A061BB5D34F002C3EBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BA17DD6AB8008A49F120E44 /* Pods-LiveStream.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
@@ -471,6 +547,7 @@
 		};
 		CFE76A071BB5D34F002C3EBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B790C7170D4AB2E65FA3514B /* Pods-LiveStream.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
@@ -552,6 +629,7 @@
 				CFE76A071BB5D34F002C3EBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFE76A081BB5D34F002C3EBD /* Build configuration list for PBXNativeTarget "LiveStreamTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +638,7 @@
 				CFE76A0A1BB5D34F002C3EBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFE76A0B1BB5D34F002C3EBD /* Build configuration list for PBXNativeTarget "LiveStreamUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +647,7 @@
 				CFE76A0D1BB5D34F002C3EBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

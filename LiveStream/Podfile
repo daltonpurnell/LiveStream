@@ -3,9 +3,8 @@
 
 target 'LiveStream' do
 
-pod 'AFNetworking'
+pod ‘AFNetworking’
 
-source 'https://github.com/CocoaPods/Specs.git'
 pod 'AWSCore'
 pod 'AWSAutoScaling'
 pod 'AWSCloudWatch'
@@ -23,7 +22,6 @@ pod 'AWSSNS'
 pod 'AWSSQS'
 pod 'AWSCognito'
 
-platform :ios, '5.0'
 pod 'CocoaLumberjack'
 
 

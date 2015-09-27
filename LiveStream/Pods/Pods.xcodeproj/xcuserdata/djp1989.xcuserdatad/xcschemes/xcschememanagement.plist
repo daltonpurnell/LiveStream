@@ -4,87 +4,92 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-LiveStream-AWSAutoScaling.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSCloudWatch.xcscheme</key>
+		<key>AWSAutoScaling.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSCognito.xcscheme</key>
+		<key>AWSCloudWatch.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSCore.xcscheme</key>
+		<key>AWSCognito.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSDynamoDB.xcscheme</key>
+		<key>AWSCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSEC2.xcscheme</key>
+		<key>AWSDynamoDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSElasticLoadBalancing.xcscheme</key>
+		<key>AWSEC2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSKinesis.xcscheme</key>
+		<key>AWSElasticLoadBalancing.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSLambda.xcscheme</key>
+		<key>AWSKinesis.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSMachineLearning.xcscheme</key>
+		<key>AWSLambda.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSMobileAnalytics.xcscheme</key>
+		<key>AWSMachineLearning.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSS3.xcscheme</key>
+		<key>AWSMobileAnalytics.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSSES.xcscheme</key>
+		<key>AWSS3.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSSNS.xcscheme</key>
+		<key>AWSSES.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSSQS.xcscheme</key>
+		<key>AWSSNS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-AWSSimpleDB.xcscheme</key>
+		<key>AWSSQS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LiveStream-CocoaLumberjack.xcscheme</key>
+		<key>AWSSimpleDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CocoaLumberjack.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -96,6 +101,102 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>150FE7AB9F47D07274CD2ED95640B2D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2327A11E3E4C79FD47354166AD693D26</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3CDD73E88E29FC5FE7068F5BC5228960</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>48079FD2C938BD9FCAE058199FEDA44D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>51A228CC3711CB0D1F55BC84F9FDCAA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6411D20380267C80F827CBD2BD311D1E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>81E05E7989F47EAF302FFBECAB4A603C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A5B4FA2A4BB6A6AC02AC92C51D43808</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8FE5948F701717E88F86FB24AB48A761</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9129C0F1698E59581A9969B0CEA20160</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD7A1F09C73B266FA0D4282FC1572049</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B472D0C9A337DC224E5627F59AB0F6A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BF1D6347D27B097E3455FBCE04E92C39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5C734493A6D88F6559B55D75668BC3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBF64148165876C2BE4104A6E0DE5A99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E91F2CE20E495BBCAEBDFAB0A85461E9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAFCD0EB2E7498721DC2FFEE78BDDBE5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECB4BF72DC9264542EC4176CC64575D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4E668AD0E7227721D8F4AA201D3EA1C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
